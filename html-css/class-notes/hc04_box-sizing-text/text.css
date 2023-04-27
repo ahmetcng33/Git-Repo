@@ -1,0 +1,61 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.text-style {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  /*? Buyüklük */
+  font-size: 12px;
+
+  /*? Kalinlik */
+  font-weight: lighter;
+  font-weight: bolder;
+  font-weight: 500;
+
+  /*? Stil */
+  font-style: italic;
+
+  font-variant: small-caps;
+
+  /*? Hizalama left,right,center, justify*/
+  text-align: justify;
+}
+
+/** Descendant Selector */
+/*! p elementinin icerisindeki span'lerin rengini red yap */
+/* p span {
+  color: red;
+} */
+#my-body .text-style span {
+  color: red;
+}
+
+.decoration {
+  color: green;
+
+  text-decoration: overline; /*? ust cizgi*/
+  text-decoration: underline; /*? alt cizgi*/
+  text-decoration: line-through; /*? üzerini ciz*/
+  text-decoration: none; /*? default*/
+}
+.transformation {
+  color: blueviolet;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: none;
+}
+
+.spacing {
+  color: yellowgreen;
+  letter-spacing: 4px; /*?Harfler arasi mesafe*/
+  word-spacing: 10px; /*?Kelimler arasi mesafe*/
+  line-height: 1.4; /*?satir yükseliği*/
+}
+
+.indent {
+  text-indent: 30px;
+}
