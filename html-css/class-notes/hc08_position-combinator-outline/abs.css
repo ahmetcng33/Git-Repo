@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.2rem;
+    border: 2px solid red;
+}
+
+/*! Aksi belirtilmediği sürece bir elemanın positionu statiktir.*/ 
+.static{
+    background-color: hotpink;
+    position: static; /*? default*/
+}
+
+
+.relative-1{
+    background-color: sandybrown;
+    position: relative;
+    top: 0rem;
+    left: 10rem; /*? 2 tanesini kullanmak yeterli*/
+    right: 0;
+    z-index: 0; /*!z indexin çalışması için pozistion statik olmamalı*/
+}
+
+.relative-2{
+    background-color: rgba(25, 10, 238, 0.396);
+    position: relative;
+    top: -5rem;
+    left:15rem;
+    z-index: 2; /*! z indexin default değeri 0 dır. */
+} 
+
+.absolute{
+    position: absolute;
+    background-color: brown;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.8rem;
+}
+
+.top-left{
+    top: 0;
+    left: 0;
+}
+.top-right{
+    top: 0;
+    right: 0;
+}
+.bottom-left{
+    bottom: 0;
+    left: 0;
+}
+.bottom-right{
+    bottom: 0;
+    right: 0;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    /* ?top ve left ile yüzdelik olarak bir elementi ortalamak mümkün ancak bu şekilde elemanin büyüklüğü dikkate alınmamış olunur. Bu sebeple tam olarak ortalamak için eleman x ve y ekseninde yarı yarıya kaydırılarak tam bir ortalama sağlanır. */
+    transform: translate(-50%, -50%);
+  }
