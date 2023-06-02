@@ -72,7 +72,7 @@
 // console.log(colors)
 
 
-//primitiveler
+//!primitiveler
 /* let a = 5;
 let b = a;
 console.log(a)
@@ -136,7 +136,7 @@ console.log(cls) */
 // console.log(colors.slice(-3,-1)) // ['Blue', 'Yellow']
 
 
-//Push ()
+//!Push ()
 
 // const colors = ['Red','Green'];
 // console.log(colors.length)
@@ -163,7 +163,7 @@ console.log(cls) */
 
 
 
-//pop 
+//!pop 
 
 // const car = ['Audi', 'BMW']
 
@@ -176,7 +176,7 @@ console.log(cls) */
 // console.log(car.pop())
 
 
-//unshift
+//!unshift
 
 // const colors = ['Green','Blue']
 
