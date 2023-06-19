@@ -66,6 +66,23 @@ myListsArr1.map( (li) => (li.style.listStyleType = "none"))
 //*               GETELEMENTBYCLASSNAME()
 //*=========================================================
 
+const lists = document.getElementsByClassName("list")  //HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
+console.log(lists); 
+
+const listsArr = [...lists]
+listsArr.forEach( (li) => console.log(li))
+
+
+//list[2].innerHTML = "Javascript language"
+
+lists[2].innerHTML = `<h1> Javascript </h1>`
+lists[3].innerText = `<h1> Javascript </h1>`
+lists[4].textContent = `<h1> VUE </h1>`
+
+
+
+
+
 //*=========================================================
 //*               QUERYSELECTOR()
 //*=========================================================
